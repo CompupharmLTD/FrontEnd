@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Product Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <link rel="stylesheet" href="C:\Users\Demilade\Documents\Self Development\Web Development Udemy\Web development\Compupharm Pharma Limited\bootstrap-5.0.2-dist\css\bootstrap.css">
+    <script src="C:\Users\Demilade\Documents\Self Development\Web Development Udemy\Web development\Compupharm Pharma Limited\bootstrap-5.0.2-dist\js\bootstrap.bundle.js"> </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+      
+</head>
+<body ng-app>
+    <div class="row container-fluid">
+        <style>
+            .container-fluid{
+                padding: 0px;
+                margin: 0px;
+            }
+        </style>
+
+        <div class="row">
+            
+          
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              
+                    
+                <a class="navbar-brand" href="home.html"><img src="images/compupharm.png" alt="" width="130" height="100" class="d-inline-block align-text-top"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <style>
+                          .nav-item-h5:hover{
+                              color: #2515b3;
+                              
+                          }
+                      </style>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"><h5 class="nav-item-h5">Products</h5></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html"> <h5 class="nav-item-h5">About</h5></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contactus.html"> <h5 class="nav-item-h5">Contact Us</h5></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="signin.html"> <h5 class="nav-item-h5">Sign In</h5></a>
+                    </li>
+                    <!--
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>-->
+                  </ul>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-info" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+
+        </div>
+
+        <!--This is the beginning of the ng-view div-->
+
+        <div ng-view>
+
+        </div>
+
+        <p><a href="#/!">Product</a></p>
+
+<a href="#!Ourproductpage">Our Products</a>
+
+        <script>
+          var app = angular.module('myApp', ["ngRoute"]);
+          app.config(function ($routeProvider){
+            $routeProvider
+            .when ("/", {
+              templateUrl : "product.html"
+            })
+            .when("/Ourproductpage", {
+              templateUrl : "Ourproductpage.html"
+            });
+          });
+        </script>
+        <!--This is the end of the ng-view div-->
+
+        <!--This is the begining of the ng-route section. Note please don't edit anything here-->
+
+
+        <div class="row ">
+
+            <div class=" bg-light col-md-7 container ">
+                          
+                <img src="images/nigerian pharmacist.jpg" class="img-fluid" alt="..." padding-left="5px" >
+                
+              </div>
+              <div class="bg-light col-md-5 ">
+              <div class="card prodcardd border-light" style="width: 28rem;">
+              <style>
+              .prodcardd{
+                           height: 410px;
+                           
+                           padding-left: 35px;
+                           margin-left: 40px;
+                           margin-top: 40px;
+                           box-shadow: 5px 10px 18px red;
+                           animation: prodcardd 5s infinite; 
+                         }
+        
+                @keyframes prodcardd {
+                50% {box-shadow: 10px 20px 30px blue;}}
+
+                .prodcarddbtn{
+                    margin-left: 80px;
+                }
+
+
+                .h5prodcar{
+                    margin-left: 125px; 
+                }
+
+
+              </style>
+              <div class="card-body">
+              <br>
+              
+              <h2 id="ourstory" class="card-title">Special title treatment</h2>
+              <br>
+              
+              <h5 class="card-text">Hello! 
+               <br>
+               You are purchasing our product 
+              </h5>
+              <br>
+              
+              <a href="Ourproductpage.html" class="btn prodcarddbtn btn-primary">As a Distributor</a>
+              <br>
+              <br>
+             <h5 class="h5prodcar"> OR</h5> 
+              <br>
+            
+              <a href="#" class="btn prodcarddbtn btn-primary">For Personal Use</a>
+              </div>
+              </div>
+              
+              </div>
+              
+              </div>
+
+        </div>
+
+        <div class="row bg-warning">
+
+            <br>
+            <br>
+            This is the footer div
+            <br>
+            <br>
+
+        </div>
+    </div>
+</body>
+</html>

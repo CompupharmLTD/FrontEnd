@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In @ Compupharm Pharmaceutical Limited</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+<div class="row calm container-fluid">
+<style>
+    .calm{
+
+        padding: 0px;
+        margin: 0px;
+    }
+</style>
+
+    <div class="myform  col-5">
+         <style>
+            .myform{
+                padding: 0px;
+                margin: 0px;
+            }
+         </style>
+        <div class="signupform ">
+            <style>
+              .signupform{
+                background-image: url("images/blank-g6e18ea382_1920.jpg");
+           
+                
+              } 
+            </style>
+          <a  href="home.html">  <img src="images/compupharm.png" alt="" width="180" height="140" class="complogo d-inline-block align-text-top"></a>
+          <style>
+            .complogo{
+                padding: 10px;
+                margin: 10px, ;
+              
+            }
+          </style>
+        
+                   
+            <div class="container py-3 min-vh-100 d-flex flex-column"> 
+            <div class="card shadow rounded-3 my-auto">
+                <div class="card-header p-3 h4">
+               Sign In 
+                </div>
+                <div class="card-body p-4">
+
+                        
+
+                        <div class="form-group col-lg-12">
+                            <label class="form-control-label" for="form-group-input">Username</label>
+                            <input type="email" class="form-control" id="form-group-input" name="username" ng-model="userName" placeholder="Email Address">
+                        </div>
+
+                        <div class="form-group col-lg-12">
+                            <label class="form-control-label" for="form-group-input">Password</label>
+                            <input type="password" class="form-control" id="form-group-input" name="pass"  ng-model="password" placeholder="Password">
+                            <span id="num" class="text-danger"> </span>
+                        </div>
+
+                        <div class="form-group col-lg-4">
+                            <label class="form-control-label" for="form-group-input">Account Type</label>
+                            <select size="0" class="form-control" name="reason">
+                                <option>As a Distributor</option>
+                                <option>For Personal Use</option>
+                             </select>
+                        </div> 
+                        <script>
+                            $http.get("https://compupharmbackendservice.azurewebsites.net/api/Users/Login"+user+pass)
+                                    .then(function onFulfilled(response) {
+
+                                        $scope.getResult = response.data;
+
+                                        var result = $scope.getResult;
+                                        var username = result.userName;
+                                        var password = result.password;
+
+                                        if (username == user && password == pass) {
+                                        //Use this
+                                        $location.path("/next.html");
+                                        //Not this
+                                        //window.location="/next.html";
+                                        }
+                                    }).catch ( function onRejected(response) {
+                                        console.log(response.status);
+                                    });
+                        </script>
+                        <br>
+                        <div class="form-group col-lg-12">
+                            <!-- <button class="btn btn-warning float-end mt-2" for="form-group-input" type="submit" value="submit">Send</button>-->
+                            <input type="submit" value="Sign In" class="signinbutton col-lg-12 bg-primary">
+                            <style>
+                                .signinbutton{
+                                    border-radius: 10px;
+                                    margin: transparent;
+                                    color: white;
+                                }
+                            </style>
+                        </div>
+                        <hr>
+                        <div class="forgotpassword text-primary">
+                           <a href="about.html"> <h6>Forgot Password</h6></a>
+                            <style>
+                                .forgotpassword {
+                                    text-align: center;
+                                }
+                            </style>
+                        </div>
+
+                        <div class="gmailsign text-primary">
+                            <a href="contactus.html"> <h6>Sign In with Google</h6></a>
+                             <style>
+                                 .gmailsign {
+                                     text-align: center;
+                                 }
+                             </style>
+                         </div>
+
+                         <hr>
+
+                         <div class="form-group col-lg-12">
+                            <!-- <button class="btn btn-warning float-end mt-2" for="form-group-input" type="submit" value="submit">Send</button>-->
+                            <a href="signup.html">  <input type="button" value="Sign Up" class="signinbutton col-lg-12 bg-dark"> </a>
+                            <style>
+                                .signinbutton{
+                                    border-radius: 10px;
+                                    margin: transparent;
+                                    color: white;
+                                }
+                            </style>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+       
+          
+          </div> 
+          
+    </div>
+
+    <div class=" sideimage col-7">
+        
+        <style>
+            .sideimage{
+           
+                background-image: url("images/happy fine man.jpg");
+                background-position: center;
+                background-size: cover;
+                position: relative;
+                
+    animation: change 35s infinite ease-in-out;
+}
+
+@keyframes change{
+   
+    20%
+    {
+        background-image:  url("images/pharmacy 2.webp");
+    }
+    40%
+    {
+        background-image: url("images/pharmacy 3.jpg");
+    }
+    60%
+    {
+        background-image: url("images/black-businessman-happy-expression_1194-2542.jpg");
+    }
+    80%
+    {
+        background-image: url("images/pharmacy 5.webp"); 
+    }
+   
+}
+            
+        </style>
+    </div>
+
+</div>
+</body>
+</html>

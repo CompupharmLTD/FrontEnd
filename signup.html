@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp @ Compupharm Pharmaceutical Limited</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <script>
+        function validate(){
+             var pass=document.myform.pass.value;
+             var passd=document.myform.passd.value;
+             if(pass==passd){
+                 document.getElementById("num").innerHTML="Your password are the same";
+                 return false;
+             
+             }else{
+                 document.getElementById("num").innerHTML="Your password are not the same";
+                 return false;
+             }
+         }
+         </script>
+
+</head>
+<body>
+    
+       <div class="row calmm">
+
+        <style>
+            .calmm{
+        
+                padding: 0px;
+                margin: 0px;
+            }
+        </style>
+
+        
+
+
+        <div class="signupform col-5 bg-light">
+
+          <a  href="home.html"> <img src="images/compupharm.png" alt="" width="180" height="140" class="complogo d-inline-block align-text-top"></a>
+          <style>
+            .complogo{
+                padding: 10px;
+                margin: 10px, ;
+              
+            }
+          </style>
+        
+
+            <!-- <style>
+              .signupform{
+                background-image: url("photo/Hbiochem.jpeg");
+              }
+            </style> -->
+          <div class="container py-3 min-vh-100 d-flex flex-column">
+            <div class="card shadow rounded-3 my-auto">
+                <div class="card-header p-3 h4">
+                 Sign Up 
+                </div>
+                <div class="card-body p-4">
+                    <form role="form" class="row" name="myform"  onsubmit="return validate()">
+                        <div class="form-group col-lg-6">
+                            <label class="form-control-label" for="form-group-input">FirstName</label>
+                            <input type="text" class="form-control" id="form-group-input" name="firstname" placeholder="Firstname">
+                        </div>
+
+                        <div class="form-group col-lg-6">
+                            <label class="form-control-label" for="form-group-input">LastName</label>
+                            <input type="text" class="form-control" id="form-group-input" name="lastname" placeholder="Lastname">
+                        </div>
+
+                        <div class="form-group col-lg-12">
+                            <label class="form-control-label" for="form-group-input">Email</label>
+                            <input type="email" class="form-control" id="form-group-input" name="email" placeholder="Email Address">
+                        </div>
+
+                        <div class="form-group col-lg-12">
+                            <label class="form-control-label" for="form-group-input">Password</label>
+                            <input type="password" class="form-control" id="form-group-input" name="pass" placeholder="Password">
+                            <span id="num" class="text-danger"> </span>
+                        </div>
+
+                        <div class="form-group col-lg-12">
+                            <label class="form-control-label" for="form-group-input"> Re:enter Password</label>
+                            <input type="password" class="form-control" id="form-group-input" name="passd" placeholder="Confirm Password">
+                            <span id="num"></span>
+                        </div>
+
+                        <div class="form-group col-lg-5">
+                            <label class="form-control-label" for="form-group-input">Account Type</label>
+                            <select size="0" class="form-control" name="reason">
+                                <option>As a Distributor</option>
+                                <option>For Personal Use</option>
+                             </select>
+                        </div>
+                        <hr>
+                    
+                        <div class="form-group col-lg-12">
+                            
+                            <!-- <button class="btn btn-warning float-end mt-2" for="form-group-input" type="submit" value="submit">Send</button> -->
+                            <input type="submit" value="Sign Up" class="signupbutton col-lg-12 bg-primary">
+                            <style>
+                                .signupbutton{
+                                    border-radius: 10px;
+                                    margin: transparent;
+                                    color: white;
+                                }
+                            </style>
+                        </div>
+                        <br>
+                        
+                        
+                        <div class="gmailsign text-primary">
+                            <a href="contactus.html"> <h6>Sign Up with Google</h6></a>
+                             <style>
+                                 .gmailsign {
+                                     text-align: center;
+                                 }
+                             </style>
+                         </div>
+
+                         <hr>
+
+                         <div class="form-group col-lg-12">
+                            <!-- <button class="btn btn-warning float-end mt-2" for="form-group-input" type="submit" value="submit">Send</button>-->
+                           <a href="signin.html"> <input type="button" value="Sign In" class="signinbutton col-lg-12 bg-dark"></a>
+                            <style>
+                                .signinbutton{
+                                    border-radius: 10px;
+                                    margin: transparent;
+                                    color: white;
+                                }
+                            </style>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+          </div>
+
+          <div class="sideeimage bg-warning col-7">
+            
+            <style>
+                .sideeimage{
+                    background-image: url("images/pexels-tima-gggfffffffffmiroshnichenko-5452201 (2).jpg");
+                    
+                }
+            </style>
+            <div>
+                
+            </div>
+          </div>
+       </div>
+    
+</body>
+</html>

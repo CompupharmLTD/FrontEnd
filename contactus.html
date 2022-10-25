@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Compupharm</title>
+    <link rel="stylesheet" href="C:\Users\Demilade\Documents\Self Development\Web Development Udemy\Web development\Compupharm Pharma Limited\bootstrap-5.0.2-dist\css\bootstrap.css">
+    <script src="C:\Users\Demilade\Documents\Self Development\Web Development Udemy\Web development\Compupharm Pharma Limited\bootstrap-5.0.2-dist\js\bootstrap.bundle.js"> </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="container-fluid">
+        <!--This is the container-fluid div. This div ensures that all other div's fits the browser pages without leaving margins. Note if you adjust the styling, the margin(layout) of the website will change on the browser-->
+        
+        <style>
+            .container-fluid{
+                margin: 0px;
+              
+                border: 0px;
+            }
+        </style>
+
+
+        <!--This is the header div-->
+
+        <div class="row bg-info">
+            
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              
+                    
+                <a class="navbar-brand" href="home.html"><img src="images/compupharm.png" alt="" width="130" height="100" class="d-inline-block align-text-top"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <style>
+                          .nav-item-h5:hover{
+                              color: #2515b3;
+                              
+                          }
+                      </style>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="product.html"><h5 class="nav-item-h5">Products</h5></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html"> <h5 class="nav-item-h5">About</h5></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contactus.html"> <h5 class="nav-item-h5">Contact Us</h5></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="signin.html"> <h5 class="nav-item-h5">Sign In</h5></a>
+                    </li>
+                    <!--
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>-->
+                  </ul>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-info" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+
+        </div>
+
+        <!--This is the first div-->
+
+        <div class="row conbackimage">
+          <!--The br tag is used to adjust the height of the background image that would be shown. The more the br tag is added the more height of the background image is shown and vice-versa.-->
+            <style>
+                .conbackimage{
+                    background-image: url(photo/mdd.jpeg);
+                }
+            </style>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </div>
+
+        <!--This is the second div-->
+        <div class="row bg-success">
+            <br>
+            <br>
+            This is the second div 
+            <br>
+            <br>
+        </div>
+
+
+    <!--This is an extra div. It is commented except you want to add more content -->
+        <div class="row bg-warning">
+            <div class="contactform">
+                <style>
+                  .contactform{
+                    background-image: url(images/drugs.webp);
+                  }
+                </style>
+              <div class="container py-3 min-vh-100 d-flex flex-column">
+                <div class="card shadow rounded-3 my-auto">
+                    <div class="card-header p-3 h4">
+                        Contact Us
+                    </div>
+                    <div class="card-body p-4">
+                        <form role="form" class="row">
+                            <div class="form-group col-lg-4">
+                                <label class="form-control-label" for="form-group-input">Name</label>
+                                <input type="text" class="form-control" id="form-group-input" name="name">
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <label class="form-control-label" for="form-group-input">Email</label>
+                                <input type="email" class="form-control" id="form-group-input" name="email">
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <label class="form-control-label" for="form-group-input">Purpose of Request</label>
+                                <select size="0" class="form-control" name="reason">
+                                    <option>Sales</option>
+                                    <option>Pharmacy Advice</option>
+                                    <option>Tech Support</option>
+                                    <option>General Feedback</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <label class="form-control-label" for="form-group-input">Notes</label>
+                                <textarea class="form-control" id="form-group-input" name="notes" rows="6"></textarea>
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <button class="btn btn-warning float-end mt-2" for="form-group-input">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+              </div>
+        </div>
+
+
+        <!--This is the footer barz-->
+        <div class="row bg-primary">
+
+            <div> 
+           <div class="footer">
+           <!-- <style>
+              .footer{
+                
+              }-->
+            </style>
+               <div class="row">
+                <div class="  bg-dark col-md-4  text-white container-fluid  p-5">
+                    <h4>
+                        
+                    About Compupharm
+                    <hr>
+                        
+                        <h5>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, adipisci quibusdam. Velit eligendi eos veritatis nesciunt, suscipit alias numquam corrupti repudiandae neque quos perferendis quam autem unde consequuntur ratione? Ea.
+                        <br>
+                        <br>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, iste dignissimos. Sint laborum accusamus nisi! Reiciendis neque velit atque. Mollitia, illo excepturi 
+                    </h5>
+                    </h4>
+                </div>
+                <div class="bg-dark col-md-2 text-white container p-5">
+                    <h4>
+                        
+                            Products
+                            <hr>
+                            <a class="nav-link text-light" href="#"> <h6 class="nav-item-h5">Superbalm</h6></a>
+                            <br>
+                            <a class="nav-link text-light" href="#"> <h6 class="nav-item-h5">Whitfield</h6></a>
+                              
+
+                              
+
+                            <br>
+                           <h4>
+                               Purchase
+                               <hr>
+                            </h4> 
+                            <a class="nav-link text-light" href="#"> <h6 class="nav-item-h5">As Distributor</h6></a>
+                            <br>
+                            
+                            <a class="nav-link text-light" href="#"> <h6 class="nav-item-h5">Personal Use</h6></a>
+                              
+
+                                
+                        
+                    </h4>
+                </div>
+                <div class="bg-dark col-md-2 text-white container p-5">
+                    <h4>
+                        Headquarters
+                        <hr>
+                        <h6>
+                            25, Ebiti Street, Unity Estate, Ojokoro, Ikorodu, Lagos State, Nigeria.
+                        </h6>
+                        <br>
+                        <h4>Customers Care</h4>
+                        <hr>
+                        <br>
+                        <a class="nav-link text-light" href="#"> <h6 class="nav-item-h5">Feedbacks</h6></a>
+                              
+
+                            
+                    </h4>
+                </div>
+                <div class="bg-dark col-md-4 text-white container p-5">
+                    <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of whats new and exciting from us.</p>
+                        <div class="d-flex w-100 gap-2">
+                          <label for="newsletter1" class="visually-hidden">Email address</label>
+                          <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                          <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                      </form>
+                      <br>
+                      <br>
+                      <a class="navbar-brand " href="#"><img src="images/compupharm.png" alt="" width="250" height="200" margin="15px" margin-left="10" class=" logimage d-inline-block align-text-center">
+                    
+                    </a>
+                    <style>
+                        .logimage{
+                            margin-left: 50px;
+                        }
+                    </style>
+                </div>
+
+                
+            
+               </div>
+              
+               <div class="row bg-dark">
+                   <hr class="horri">
+                   <style>
+                    .horri{
+                      border: 2px solid white;
+                    }
+                   </style>
+                   <div class="col-md-9">
+                    <marquee behavior="" direction=""><h4 class="copyrghts text-light"> © 2022 Compupharm Pharmaceutical Limited</h4></marquee>
+
+                    <style>
+                        .copyrghts{
+                            margin-top: 4px;
+                        }
+                    </style>
+                   </div>
+
+                   <div class="col-md-3">
+                    <style>
+                        .fa {
+                          padding: 10px;
+                          font-size: 23px;
+                          width: 40px;
+                          text-align: center;
+                          text-decoration: none;
+                          margin: 5px 2px;
+                          border-radius: 20%;
+                        }
+                        
+                        .fa:hover {
+                            opacity: 0.7;
+                        }
+                        
+                        .fa-mobile {
+                          background: green;
+                          color: white;
+                        }
+                        
+                        .fa-facebook {
+                          background: #3B5998;
+                          color: white;
+                        }
+                        
+                        .fa-twitter {
+                          background: #55ACEE;
+                          color: white;
+                        }
+                        
+                        .fa-instagram {
+                          background: pink;
+                          color: white;
+                        }
+                        
+                        .fa-linkedin {
+                          background: #007bb5;
+                          color: white;
+                        }
+                        
+                        .fa-envelope {
+                          background: #dd4b39;
+                          color: white;
+                        }
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        </style>
+                        </head>
+                        <body>
+                        
+                        
+                        
+                        <!-- Add font awesome icons -->
+                        <a href="#" class="fa fa-mobile"></a>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-envelope"></a>
+                        
+                        
+                        
+                   </div>
+               </div>
+               
+
+               
+
+           </div>
+        </div>
+    </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
