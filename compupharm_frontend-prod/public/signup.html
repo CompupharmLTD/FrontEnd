@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Compupharm</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'></link>  
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+</head>
+
+<body>
+    <!-- header section start -->
+    <div class="header_section">
+        <div class="container-fluid">
+           <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: relative;">
+              <div class="logo"><img src="images/compupharm_logo.png" style="width: 100%;"></div>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content: center">
+                 <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                       <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="/products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="/outlets">Outlets</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                 </ul>
+              </div>
+           </nav>
+        </div>
+     </div>
+    <!-- header section end -->
+    <!-- contact section start -->
+    <div class="signup_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-6">
+                    <h1 class="contact_text">REGISTER</h1>
+                    <form class="mail_sectin" id="signupForm">
+                        <input type="text" class="email-bt" placeholder="Company Name" name="companyName">
+                        <input type="text" class="email-bt" placeholder="Company Address" name="companyAddress">
+                        <input type="text" class="email-bt" placeholder="User Name" name="userName">
+                        <input type="password" class="email-bt" placeholder="Password" name="password">
+                        <input type="text" class="email-bt" placeholder="Company Phone" name="companyPhone">
+                        <input type="email" class="email-bt" placeholder="Email" name="email">
+                        <input type="file" class="email-bt" name="companyCertificate" id="file">
+                        <div class="send_bt"><button type="submit" id="btnSignup">SIGN UP</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact section end -->
+    <!-- copyright section start -->
+    <div class="copyright_section">
+        <div class="container">
+            <div class="social_icon">
+                <ul>
+                    <li><a href="#"><img src="images/fb-icon.png"></a></li>
+                    <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+                    <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+                    <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
+                </ul>
+            </div>
+            <p class="copyright_text">2022 All Rights Reserved. Compupharm</p>
+    </div>
+    <!-- copyright section end -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="javascripts/signup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+</body>
+
+</html>
